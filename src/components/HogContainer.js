@@ -59,7 +59,7 @@ export default class HogContainer extends Component {
             < div className = "indexWrapper ui grid container" >
                 < div className = "filterWrapper" >
 
-                    < button onClick = {() => 
+                    < button className = "ui red button" onClick = {() => 
                         this.setState({
                             nameAZSorted: true,
                             nameZASorted: false,
@@ -70,7 +70,8 @@ export default class HogContainer extends Component {
                     }> Sort by Name (A-Z) < /button>
 
 
-                    < button onClick = {() => 
+                    < button className = "ui yellow button" onClick = {
+                            () =>
                         this.setState({ 
                             nameAZSorted: false,
                             nameZASorted: true,
@@ -81,7 +82,8 @@ export default class HogContainer extends Component {
                     }> Sort by Name (Z-A) < /button>
 
 
-                    < button onClick = {()=>
+                    < button className = "ui orange button" onClick = {
+                            () =>
                         this.setState({
                             nameAZSorted: false,
                             nameZASorted: false,
@@ -91,7 +93,8 @@ export default class HogContainer extends Component {
                         })
                     } > Sort by Weight(Big - Small) < /button>
 
-                    < button onClick = {()=>
+                    < button className = "ui olive button" onClick = {
+                            () =>
                         this.setState({
                             nameAZSorted: false,
                             nameZASorted: false,
@@ -101,7 +104,7 @@ export default class HogContainer extends Component {
                         })
                     } > Sort by Weight(Small -  Big) < /button>
 
-                    < button onClick = {
+                    < button className = "ui green button"  onClick = {
                         () =>
                         this.setState({
                             nameAZSorted: false,
