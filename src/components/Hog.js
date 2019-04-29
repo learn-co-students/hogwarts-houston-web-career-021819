@@ -12,7 +12,7 @@ export default class Hog extends React.Component {
 
     render(){
         return (
-            <div class='card' hidden={this.state.hidden} onClick={() => this.setState({asImg: !this.state.asImg})}>
+            <div className="ui eight wide column" hidden={this.state.hidden} onClick={() => this.setState({asImg: !this.state.asImg})}>
             {
                 (this.state.asImg) ?
                 <div>

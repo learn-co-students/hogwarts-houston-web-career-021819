@@ -11,7 +11,7 @@ export const HogContainer = (props) => {
       }
 
     return (
-        <div class="ui cards" className="ui grid container">
+        <div className="ui grid container">
             {renderHogs()}
         </div>
     )
